@@ -1,0 +1,66 @@
+/**
+ * Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.entry-content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: normal;
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+	}
+}
+
+/**
+ * Tag: PRE.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.entry-content {
+	pre {
+		overflow: auto;
+		border: .1rem solid $color-gray-light;
+		box-shadow: $form-box-shadow;
+		padding: .4rem;
+		font-size: 1.4rem;
+		text-align: left;
+		code {
+			background-color: transparent;
+		}
+	}
+}
+
+/**
+ * Tag: FIGURE.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.entry-content {
+	img {
+		border: .1rem solid $color-gray-light;
+		padding: .1rem;
+	}
+	.wp-caption-text {
+		font-style: italic;
+		font-weight: 400;
+		color: $color-gray-light;
+		font-size: 1.2rem;
+	}
+}
+
+/**
+ * Tag: GIST.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.gist {
+	table {
+		tbody {
+			border: none;
+		}
+		td {
+			border: none;
+		}
+	}
+}

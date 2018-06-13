@@ -1,0 +1,12 @@
+/**
+ * KeyFrames: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+@keyframes comment-select {
+	0% {
+		border-color: #5cb85c;
+	}
+	100% {
+		border: $comment-content-border;
+	}
+}

@@ -1,0 +1,22 @@
+/**
+ * Libs: Colors.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$lib-color-gray-base: #000;
+$lib-color-gray-darker: lighten($lib-color-gray-base, 13.5%); // #222
+$lib-color-gray-dark: lighten($lib-color-gray-base, 20%); // #333
+$lib-color-gray: lighten($lib-color-gray-base, 33.5%); // #555
+$lib-color-gray-light: lighten($lib-color-gray-base, 46.7%); // #777
+$lib-color-gray-lighter: lighten($lib-color-gray-base, 93.5%); // #eee
+
+/**
+ * Libs: Fonts.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$lib-font-size-01: 1.6rem;
+$lib-font-size-02: 1.2rem;
+
+$lib-font-family-01: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$lib-font-family-02: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$lib-font-family-03: 'Lobster';
+$lib-font-family-04: 'Roboto Condensed';

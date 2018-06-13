@@ -1,0 +1,51 @@
+/**
+ * Global: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+body {
+	font-family: $font-family-global;
+	background-color: $background-color-body;
+	> div {
+		font-size: $font-size-global;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+}
+
+p {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+:focus {
+	outline: none;
+}
+
+.archive-description {
+	background-color: hsl(0, 0%, 96%);
+	border-radius: $border-radius-base;
+	padding: 30px;
+}
+
+.archive-title,
+.author-box-title {
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+
+.msg-none {
+	font-style: italic;
+	color: hsl(0, 0%, 48%);
+}

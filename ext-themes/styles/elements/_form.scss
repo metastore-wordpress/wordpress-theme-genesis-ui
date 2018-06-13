@@ -1,0 +1,52 @@
+/**
+ * Forms: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+input[type]:not([type="submit"]):not([type="reset"]),
+textarea {
+	box-shadow: $form-box-shadow;
+	font-family: $form-font-family;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.required {
+	color: #f00;
+}
+
+.entry-content {
+	.search-form {
+		width: 100%;
+		input {
+			&[type="submit"] {
+				display: none;
+			}
+		}
+	}
+}
+
+/**
+ * Forms: Placeholder.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+::-webkit-input-placeholder {
+	color: $color-gray-light;
+	font-style: italic;
+}
+
+::-moz-placeholder {
+	color: $color-gray-light;
+	font-style: italic;
+}
+
+:-moz-placeholder {
+	color: $color-gray-light;
+	font-style: italic;
+}
+
+:-ms-input-placeholder {
+	color: $color-gray-light;
+	font-style: italic;
+}

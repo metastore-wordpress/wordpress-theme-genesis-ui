@@ -1,0 +1,157 @@
+@import "_variables.lib.scss";
+
+/**
+ * Vars: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+// Fonts.
+$font-family-global:						$lib-font-family-01;
+$font-family-content:						$lib-font-family-02;
+$font-family-logo:							$lib-font-family-03;
+
+$font-size-global: 							$lib-font-size-01;
+$font-size-meta: 							$lib-font-size-02;
+
+// Colors.
+$background-color-body:						#fff;
+$border-color:								$lib-color-gray-lighter;
+
+$color-gray-base:							$lib-color-gray-base;
+$color-gray-darker:							$lib-color-gray-darker;
+$color-gray-dark:							$lib-color-gray-dark;
+$color-gray:								$lib-color-gray;
+$color-gray-light:							$lib-color-gray-light;
+$color-gray-lighter:						$lib-color-gray-lighter;
+
+
+// Border radius.
+$border-radius-base:						.4rem;
+$border-radius-large:						.6rem;
+$border-radius-small:						.3rem;
+
+/**
+ * Vars: Links.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$link-color:								#0073e5;
+$link-color-hover:							#333;
+
+/**
+ * Vars: Headings.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$heading-color-hover:						#0073e5;
+$heading-font-family:						$lib-font-family-04;
+$heading-border:							.2rem solid $heading-color-hover;
+$heading-padding:							0 0 1rem;
+
+/**
+ * Vars: Blocks.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+// Block: common.
+$block-common-background-color:				#fff;
+$block-common-box-shadow:					none;
+$block-common-border-radius:				0;
+
+// Block: main.
+$block-main-background-color:				$block-common-background-color;
+$block-main-box-shadow:						$block-common-box-shadow;
+$block-main-border-radius:					$block-common-border-radius;
+
+// Block: widget.
+$block-widget-background-color:				$block-common-background-color;
+$block-widget-box-shadow: 					$block-common-box-shadow;
+$block-widget-border-radius:				$block-common-border-radius;
+
+// Block: header.
+$block-header-background-color:				#222;
+$block-header-color:						#fff;
+
+// Block: footer.
+$block-footer-background-color:				$block-common-background-color;
+$block-footer-box-shadow:					$block-common-box-shadow;
+
+/**
+ * Vars: Buttons.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+// Common.
+$button-background-color:					#333;
+$button-background-color-hover:				#0073e5;
+$button-box-shadow-hover:					0 .1rem 1.5rem 0 rgba(84, 110, 122, .4);
+$button-border-radius:						$border-radius-small;
+
+/**
+ * Vars: Forms.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$form-box-shadow:							inset 0 .1rem .5rem rgba(0, 0, 0, .1);
+$form-font-family:							$font-family-global;
+
+/**
+ * Vars: Comments.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$comment-meta-color:						$lib-color-gray-light;
+$comment-meta-font-size:					1.2rem;
+
+$comment-content-background-color:			#f5f5f5;
+$comment-content-border:					.1rem solid $lib-color-gray-lighter;
+$comment-content-border-radius:				$border-radius-small;
+$comment-content-font-family:				$font-family-content;
+$comment-content-font-size: 				1.4rem;
+$comment-content-padding:					1rem;
+$comment-content-box-shadow:				none;
+
+$comment-arrow-background-color:			$comment-content-background-color;
+$comment-arrow-border:						$comment-content-border;
+$comment-arrow-size:						1rem;
+$comment-arrow-position-left:				2.4rem;
+
+$comment-reply-font-size:					1.2rem;
+$comment-reply-text-align:					right;
+$comment-reply-text-transform:				uppercase;
+
+$comment-children-border-left:				.2rem solid $lib-color-gray-lighter;
+
+$comment-respond-padding:					2rem;
+$comment-respond-box-shadow:				0 0 2rem rgba(0, 0, 0, .3);
+$comment-respond-border-radius:				$border-radius-large;
+$comment-respond-label-margin:				0 1rem 0 0;
+$comment-respond-font-size: 				1.4rem;
+$comment-respond-textarea-font-family:		$font-family-content;
+$comment-respond-textarea-font-size: 		1.6rem;
+
+/**
+ * Vars: Menu.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$menu-sub-box-shadow:						0 .8rem .5rem -.5rem rgba(0, 0, 0, .1);
+
+/**
+ * Vars: Breadcrumb.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$breadcrumb-border:							.1rem solid $lib-color-gray-lighter;
+$breadcrumb-border-radius:					$block-main-border-radius;
+$breadcrumb-margin:							.5rem 0 2rem;
+$breadcrumb-padding:						0 0 1rem;
+$breadcrumb-font-size: 						1.4rem;
+
+/**
+ * Vars: Pagination.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$pagination-page-numbers-color:				#fff;
+$pagination-page-numbers-min-width:			5rem;
+$pagination-page-numbers-background-color:	#333;
+$pagination-page-numbers-border-radius:		$border-radius-small;
+
+$pagination-page-numbers-current-background-color:	#1e8cbe;
+
+/**
+ * Vars: Widgets.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$widget-title-border:						.2rem solid $heading-color-hover;

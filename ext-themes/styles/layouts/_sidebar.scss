@@ -1,0 +1,11 @@
+/**
+ * Sidebar: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.sidebar {
+	font-size: 1.4rem;
+	.widget {
+		box-shadow: $block-main-box-shadow;
+		border-radius: $block-widget-border-radius;
+	}
+}

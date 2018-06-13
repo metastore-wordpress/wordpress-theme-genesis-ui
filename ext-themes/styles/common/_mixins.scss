@@ -1,0 +1,35 @@
+/**
+ * Mixins: Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+/**
+ * Mixins: FA-Icon.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+$icon-indent: .5rem;
+
+@mixin icon-right($icon) {
+	display: inline-block;
+	font-family: 'Font Awesome 5 Free';
+	content: $icon;
+	margin-right: $icon-indent;
+	text-rendering: auto;
+}
+
+@mixin icon-left($icon) {
+	display: inline-block;
+	font-family: 'Font Awesome 5 Free';
+	content: $icon;
+	margin-left: $icon-indent;
+	text-rendering: auto;
+}
+
+@mixin menu-icon-arrow($icon, $align) {
+	display: inline-block;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: bold;
+	content: $icon;
+	text-align: $align;
+	text-rendering: auto;
+	width: 2rem;
+}

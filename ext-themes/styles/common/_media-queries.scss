@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1140px) {
+	.site-inner {
+		max-width: 1344px;
+	}
+	.content {
+		width: 70%;
+	}
+	.sidebar {
+		width: 25%;
+	}
+	.footer-widgets {
+		.wrap {
+			max-width: 1344px;
+		}
+	}
+}
