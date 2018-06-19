@@ -22,6 +22,11 @@ body.woocommerce-page {
 		ul.woocommerce-error {
 			margin-left: 0;
 		}
+		&-form-coupon {
+			.form-row {
+				float: unset;
+			}
+		}
 		/*
 		.button {
 			&.add_to_cart_button,

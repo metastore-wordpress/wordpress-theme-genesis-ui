@@ -9,14 +9,19 @@
 		text-transform: unset;
 	}
 	&-container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
 	}
 	&-header {
 		border-bottom: 1px solid #eee;
 	}
 	&-inner {
+		flex: 1;
 		border: 1px solid #eee;
 		box-shadow: 0 .7rem 5rem 0 rgba(38, 50, 56, .07);
 		margin: 15rem auto 8rem !important;
+		width: 100%;
 	}
 	&-footer {
 		border-top: 1px solid #eee;
