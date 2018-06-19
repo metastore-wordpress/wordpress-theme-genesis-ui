@@ -2,101 +2,101 @@
  * Comment: Common.
  * ------------------------------------------------------------------------------------------------------------------ */
 
-.entry-comments {
-	.comment-list {
-		.comment-respond {
-			padding: $comment-respond-padding;
-			box-shadow: $comment-respond-box-shadow;
-			border-radius: $comment-respond-border-radius;
-		}
+.comment {
+	&-list {
 		.comment {
-			article {
-				.comment-header {
-					position: relative;
-					overflow: hidden;
-					margin: 0;
-					.comment-author {
-					}
-					.comment-meta {
-						font-size: $comment-meta-font-size;
-						a {
-							color: $comment-meta-color;
-						}
-					}
-					.comment-edit-link {
-						display: none;
-						font-size: $font-size-meta;
-						position: absolute;
-						top: 0;
-						right: 0;
-					}
-				}
-				.comment-content {
-					background-color: $comment-content-background-color;
-					border: $comment-content-border;
-					border-radius: $comment-content-border-radius;
-					box-shadow: $comment-content-box-shadow;
-					font-family: $comment-content-font-family;
-					font-size: $comment-content-font-size;
-					padding: $comment-content-padding;
-					position: relative;
-					text-align: justify;
-					&:before {
-						background-color: $comment-arrow-background-color;
-						border: $comment-arrow-border;
-						border-bottom: none;
-						border-right: none;
-						content: '';
-						display: block;
-						height: $comment-arrow-size;
-						left: $comment-arrow-position-left;
-						position: absolute;
-						top: -(($comment-arrow-size / 2) + 0.1);
-						transform: rotate(45deg);
-						width: $comment-arrow-size;
-					}
-				}
-				.comment-reply {
-					font-size: $comment-reply-font-size;
-					text-align: $comment-reply-text-align;
-					text-transform: $comment-reply-text-transform;
-				}
-			}
-			article:hover {
-				.comment-header {
-					.comment-edit-link {
-						display: block;
-					}
-				}
-			}
-			.children {
-				border-left: $comment-children-border-left;
+			&-respond {
+				padding: $comment-respond-padding;
+				box-shadow: $comment-respond-box-shadow;
+				border-radius: $comment-respond-border-radius;
 			}
 		}
 	}
-}
-
-/**
- * Comment: Respond.
- * ------------------------------------------------------------------------------------------------------------------ */
-
-.comment-respond {
-	font-size: $comment-respond-font-size;
-	textarea {
-		font-family: $comment-respond-textarea-font-family;
-		font-size: $comment-respond-textarea-font-size;
+	&-header {
+		position: relative;
+		overflow: hidden;
+		margin: 0;
 	}
-}
-
-/**
- * Comment: Notes.
- * ------------------------------------------------------------------------------------------------------------------ */
-
-.no-comments,
-.comment-notes {
-	color: $color-gray-light;
-	font-size: 1.4rem;
-	font-style: italic;
+	&-author {
+	}
+	&-meta {
+		font-size: $comment-meta-font-size;
+		a {
+			color: $comment-meta-color;
+		}
+	}
+	&-edit-link {
+		display: none;
+		font-size: $font-size-meta;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&-content {
+		background-color: $comment-content-background-color;
+		border: $comment-content-border;
+		border-radius: $comment-content-border-radius;
+		box-shadow: $comment-content-box-shadow;
+		font-family: $comment-content-font-family;
+		font-size: $comment-content-font-size;
+		padding: $comment-content-padding;
+		position: relative;
+		text-align: justify;
+		&:before {
+			background-color: $comment-arrow-background-color;
+			border: $comment-arrow-border;
+			border-bottom: none;
+			border-right: none;
+			content: '';
+			display: block;
+			height: $comment-arrow-size;
+			left: $comment-arrow-position-left;
+			position: absolute;
+			top: -(($comment-arrow-size / 2) + 0.1);
+			transform: rotate(45deg);
+			width: $comment-arrow-size;
+		}
+	}
+	&-reply {
+		font-size: $comment-reply-font-size;
+		text-align: $comment-reply-text-align;
+		text-transform: $comment-reply-text-transform;
+	}
+	&-notes {
+		color: $color-gray-light;
+		font-size: 1.4rem;
+		font-style: italic;
+	}
+	&-select {
+		.comment {
+			&-content {
+				animation: comment-select 2s ease-in 1;
+				&:before {
+					@extend .comment-content;
+				}
+			}
+		}
+	}
+	&-respond {
+		font-size: $comment-respond-font-size;
+		textarea {
+			font-family: $comment-respond-textarea-font-family;
+			font-size: $comment-respond-textarea-font-size;
+		}
+	}
+	&-reply-title {
+		@include heading();
+	}
+	article:hover {
+		.comment {
+			&-edit-link {
+				display: block;
+			}
+		}
+	}
+	.children {
+		border-left: $comment-children-border-left;
+	}
 }
 
 /**
@@ -107,15 +107,8 @@
 	float: right;
 }
 
-/**
- * Comment: Select.
- * ------------------------------------------------------------------------------------------------------------------ */
-
-.comment-select {
-	.comment-content {
-		animation: comment-select 2s ease-in 1;
-		&:before {
-			@extend .comment-content;
-		}
-	}
+.no-comments {
+	color: $color-gray-light;
+	font-size: 1.4rem;
+	font-style: italic;
 }

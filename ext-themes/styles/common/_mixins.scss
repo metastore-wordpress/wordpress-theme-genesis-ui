@@ -8,15 +8,14 @@
 
 $icon-indent: .5rem;
 
-@mixin icon-right($icon) {
+@mixin icon($icon) {
 	display: inline-block;
 	font-family: 'Font Awesome 5 Free';
 	content: $icon;
-	margin-right: $icon-indent;
 	text-rendering: auto;
 }
 
-@mixin icon-left($icon) {
+@mixin icon-right($icon) {
 	display: inline-block;
 	font-family: 'Font Awesome 5 Free';
 	content: $icon;
@@ -24,7 +23,15 @@ $icon-indent: .5rem;
 	text-rendering: auto;
 }
 
-@mixin menu-icon-arrow($icon, $align) {
+@mixin icon-left($icon) {
+	display: inline-block;
+	font-family: 'Font Awesome 5 Free';
+	content: $icon;
+	margin-right: $icon-indent;
+	text-rendering: auto;
+}
+
+@mixin icon-menu-arrow($icon, $align) {
 	display: inline-block;
 	font-family: 'Font Awesome 5 Free';
 	font-weight: bold;
@@ -32,4 +39,11 @@ $icon-indent: .5rem;
 	text-align: $align;
 	text-rendering: auto;
 	width: 2rem;
+}
+
+@mixin heading() {
+	font-weight: normal;
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+	overflow: hidden;
 }

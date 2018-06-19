@@ -1,0 +1,30 @@
+/**
+ * Common.
+ * ------------------------------------------------------------------------------------------------------------------ */
+
+.archive {
+	&-description {
+		background-color: hsl(0, 0%, 96%);
+		border-radius: $border-radius-base;
+		padding: 30px;
+	}
+	&-title {
+		@include heading();
+		padding: 0;
+		margin: 0;
+	}
+	&-pagination {
+		text-align: center;
+		a {
+			border-radius: $pagination-page-numbers-border-radius;
+			min-width: $pagination-page-numbers-min-width;
+			&:hover,
+			&:focus {
+			}
+		}
+		.active {
+			a {
+			}
+		}
+	}
+}

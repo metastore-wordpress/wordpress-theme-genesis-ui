@@ -2,12 +2,22 @@
  * Footer: Common.
  * ------------------------------------------------------------------------------------------------------------------ */
 
-.footer-widgets {
-	box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+.footer {
+	&-widgets {
+		box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+		font-size: 1.4rem;
+		+ .site {
+			&-footer {
+				box-shadow: none;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 960px) {
-	.footer-widgets {
-		box-shadow: none;
+	.footer {
+		&-widgets {
+			box-shadow: none;
+		}
 	}
 }

@@ -8,6 +8,8 @@
 $font-family-global:						$lib-font-family-01;
 $font-family-content:						$lib-font-family-02;
 $font-family-logo:							$lib-font-family-03;
+$font-family-heading:						$lib-font-family-04;
+$font-family-mono:							$lib-font-family-05;
 
 $font-size-global: 							$lib-font-size-01;
 $font-size-meta: 							$lib-font-size-02;
@@ -41,7 +43,7 @@ $link-color-hover:							#333;
  * ------------------------------------------------------------------------------------------------------------------ */
 
 $heading-color-hover:						#0073e5;
-$heading-font-family:						$lib-font-family-04;
+$heading-font-family:						$font-family-heading;
 $heading-border:							.2rem solid $heading-color-hover;
 $heading-padding:							0 0 1rem;
 

@@ -16,28 +16,3 @@
 	text-overflow: ellipsis;
 }
 
-/**
- * Navigation: Pagination.
- * ------------------------------------------------------------------------------------------------------------------ */
-
-.archive-pagination {
-	text-align: center;
-	a {
-		border-radius: $pagination-page-numbers-border-radius;
-		min-width: $pagination-page-numbers-min-width;
-		&:hover,
-		&:focus {
-		}
-	}
-	.active {
-		a {
-		}
-	}
-}
-
-.entry-pagination {
-	text-align: right;
-	font-family: $font-family-global;
-	font-size: 1.4rem;
-	color: $color-gray-light;
-}

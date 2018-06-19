@@ -1,10 +1,11 @@
 /**
  * Button: Common.
  * ------------------------------------------------------------------------------------------------------------------ */
-
+/*
 input[type="submit"],
 input[type="button"],
-input[type="reset"] {
+input[type="reset"],
+button {
 	border-radius: $button-border-radius;
 	background-color: $button-background-color;
 	&:hover {
@@ -12,3 +13,4 @@ input[type="reset"] {
 		background-color: $button-background-color-hover;
 	}
 }
+*/

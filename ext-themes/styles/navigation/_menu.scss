@@ -5,6 +5,29 @@
 .genesis-nav-menu {
 	.menu-item {
 		text-transform: uppercase;
+		&-cart {
+			a {
+				display: grid;
+				align-items: center;
+				grid-template-columns: repeat(3, min-content);
+				grid-gap: 0 .5rem;
+				.cart{
+					display: block;
+					border-radius: .2rem;
+					color: #fff;
+					font-family: 'Fira Mono', monospace;
+					font-size: 1rem;
+					line-height: 1;
+					padding: .5rem;
+					&-count {
+						background: hsl(141, 71%, 48%);
+					}
+					&-total {
+						background: hsl(217, 71%, 53%);
+					}
+				}
+			}
+		}
 	}
 	.sub-menu {
 		a {
@@ -20,7 +43,7 @@
 			.menu-item-has-children {
 				> a {
 					&:after {
-						@include menu-icon-arrow('\f107', right);
+						@include icon-menu-arrow('\f107', right);
 					}
 				}
 			}
@@ -42,68 +65,11 @@
 							content: none;
 						}
 						&:before {
-							@include menu-icon-arrow('\f104', left);
+							@include icon-menu-arrow('\f104', left);
 						}
 					}
 				}
 			}
 		}
 	}
-	/*
-	.genesis-responsive-menu {
-		.genesis-nav-menu {
-			$sub-menu-size: 280px;
-			.menu-item-has-children {
-				> a {
-					display: flex;
-					span {
-						display: block;
-						flex: auto;
-					}
-					&:after {
-						@include menu-icon-arrow('\f107', right);
-					}
-				}
-			}
-			.sub-menu {
-				width: $sub-menu-size;
-				a {
-					width: $sub-menu-size;
-				}
-				.sub-menu {
-					top: -1px;
-					right: -($sub-menu-size - 1);
-					margin: 0;
-				}
-				.menu-item-has-children {
-					> a {
-						&:after {
-							@include menu-icon-arrow('\f105', right);
-						}
-					}
-				}
-			}
-			> .menu-item {
-				&:nth-last-child(-n+2) {
-					> .sub-menu {
-						right: 0;
-						.sub-menu {
-							right: ($sub-menu-size - 1);
-						}
-						.menu-item-has-children {
-							> a {
-								&:after {
-									content: none;
-								}
-								&:before {
-									@include menu-icon-arrow('\f104', left);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	*/
 }

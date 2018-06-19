@@ -2,51 +2,63 @@
  * Common.
  * ------------------------------------------------------------------------------------------------------------------ */
 
-.entry-content {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-weight: normal;
-		font-family: $heading-font-family;
-		text-transform: uppercase;
-	}
-}
+.entry {
+	&-content {
+		/**
+		 * Tag: H1-6.
+		 * ---------------------------------------------------------------------------------------------------------- */
 
-/**
- * Tag: PRE.
- * ------------------------------------------------------------------------------------------------------------------ */
-
-.entry-content {
-	pre {
-		overflow: auto;
-		border: .1rem solid $color-gray-light;
-		box-shadow: $form-box-shadow;
-		padding: .4rem;
-		font-size: 1.4rem;
-		text-align: left;
-		code {
-			background-color: transparent;
+		@for $i from 1 through 6 {
+			h#{$i} {
+				@include heading();
+			}
 		}
-	}
-}
 
-/**
- * Tag: FIGURE.
- * ------------------------------------------------------------------------------------------------------------------ */
+		/**
+		 * Tag: PRE.
+		 * ---------------------------------------------------------------------------------------------------------- */
 
-.entry-content {
-	img {
-		border: .1rem solid $color-gray-light;
-		padding: .1rem;
-	}
-	.wp-caption-text {
-		font-style: italic;
-		font-weight: 400;
-		color: $color-gray-light;
-		font-size: 1.2rem;
+		pre {
+			overflow: auto;
+			border: .1rem solid $color-gray-light;
+			box-shadow: $form-box-shadow;
+			padding: .4rem;
+			font-size: 1.4rem;
+			text-align: left;
+			code {
+				background-color: transparent;
+			}
+		}
+
+		/**
+		 * Tag: FIGURE.
+		 * ---------------------------------------------------------------------------------------------------------- */
+
+		img {
+			border: .1rem solid $color-gray-light;
+			padding: .1rem;
+		}
+		.wp-caption-text {
+			font-style: italic;
+			font-weight: 400;
+			color: $color-gray-light;
+			font-size: 1.2rem;
+		}
+
+		/**
+		 * Tag: TABLE.
+		 * ---------------------------------------------------------------------------------------------------------- */
+
+		table {
+			th {
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 1.2rem;
+				text-transform: uppercase;
+			}
+			td {
+				font-size: 1.4rem;
+			}
+		}
 	}
 }
 

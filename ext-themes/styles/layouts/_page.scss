@@ -2,14 +2,9 @@
  * Pages: Common.
  * ------------------------------------------------------------------------------------------------------------------ */
 
-main {
-	article {
-		&.page {
-			.post-edit-link {
-				font-size: $font-size-meta;
-				float: right;
-			}
-		}
+.page {
+	.post-edit-link {
+		display: none;
 	}
 }
 
@@ -19,18 +14,3 @@ main {
 		width: auto;
 	}
 }
-/*
-.site-inner {
-	max-width: 1344px;
-}
-
-.content {
-	width: 70%;
-}
-.sidebar {
-	width: 25%;
-}
-
-.footer-widgets .wrap{
-	max-width: 1344px;
-}*/

@@ -1,0 +1,37 @@
+body.woocommerce-page {
+	&.full-width-content {
+		.content {
+			max-width: unset;
+		}
+	}
+}
+
+body.woocommerce-page {
+	.woocommerce {
+		form {
+			.form-row {
+				input.input-text,
+				textarea {
+					padding: 15px;
+				}
+			}
+		}
+		.page-title {
+			@include heading();
+		}
+		ul.woocommerce-error {
+			margin-left: 0;
+		}
+		/*
+		.button {
+			&.add_to_cart_button,
+			&.product_type_grouped,
+			&.single_add_to_cart_button {
+				&:before {
+					@include icon-left('\f218');
+				}
+			}
+		}
+		*/
+	}
+}
