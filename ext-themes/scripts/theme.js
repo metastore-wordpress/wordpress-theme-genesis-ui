@@ -2,7 +2,7 @@
 
 /**
  * FancyBox. Set class.
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 
 function extJS_fancyboxClass() {
 	let elFilterWrapper = [
@@ -23,7 +23,7 @@ function extJS_fancyboxClass() {
 
 /**
  * FancyBox. Loading.
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 
 function extJS_fancyboxInit() {
 	let elFilterWrapper = jQuery('div.entry-content');
@@ -34,7 +34,7 @@ function extJS_fancyboxInit() {
 
 /**
  * Comment highlight.
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 
 function extJS_commentHighlight() {
 	let elCustomClass = 'comment-select';
@@ -46,7 +46,7 @@ function extJS_commentHighlight() {
 
 /**
  * Loading functions.
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 
 $(function () {
 	$(window).on('load', function () {
